@@ -1,21 +1,28 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import UserBox from './components/UserBox';
+import HomeScreen from './pages/Home';
+import Routes from './pages/routes';
+import SignInScreen from './pages/SignIn';
+import SignUpScreen from './pages/SignUp';
+import NewPageScreen from './pages/Test';
+
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Stack = createNativeStackNavigator()
+return(
+  <NavigationContainer>
+  <Stack.Navigator >
+    <Stack.Screen name="Home" options={{ headerShown: false }} component={SignInScreen} />
+    <Stack.Screen name="Entry" options={{ headerShown: false }} component={Routes} />
+    <Stack.Screen name="Test" component={HomeScreen} />
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  </Stack.Navigator>
+</NavigationContainer>)
+
+};
