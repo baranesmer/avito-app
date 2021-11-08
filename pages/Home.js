@@ -8,7 +8,7 @@ import UserBox from "../components/UserBox";
 import SignUpScreen from "./SignUp";
 import NewPageScreen from "./Test";
 
-const HomeScreen = ({press}) => {
+const HomeScreen = ({navigation}) => {
   const nameList = [
     { name: "Baran", lastName: "Esmer" },
     { name: "Kevin", lastName: "Schweissguth" },
@@ -22,7 +22,7 @@ const HomeScreen = ({press}) => {
   return (
     <SafeAreaView style ={{backgroundColor:"#fff",height:"100%"}} >
       
-      <CustomerSearch onPress={press}/>
+      <CustomerSearch onPress={()=> navigation.push('Add Customer')}/>
       <View style={styles.container}>
       {nameList.map(({ name, lastName }) => (
         <UserBox name={name} lastName={lastName}></UserBox>

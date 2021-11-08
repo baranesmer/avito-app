@@ -9,9 +9,9 @@ const Routes = ({navigation}) => {
 
   return (
       <Tab.Navigator options={{ headerShown: false }}>
-        <Tab.Screen name="Home" component={HomeScreen} params={navigation} />
+        <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="NewPage" component={NewPageScreen} />
-        <Tab.Screen name="SignUp" component={SignUpScreen} />
+        {/* <Tab.Screen name="SignUp" component={SignUpScreen} /> */}
       </Tab.Navigator>
   );
 };
