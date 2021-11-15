@@ -1,14 +1,18 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { userBoxStyles } from "../config/styles";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {  userBoxStyles } from "../config/styles";
 
-const UserBox =({name,lastName})=> {
+const UserBox =({name,lastName,onPress})=> {
     return(
-        <View style={userBoxStyles.container}>
+       
+
+        <View style={userBoxStyles.innerContainer}>
             <Text>{name}</Text>
             <Text>{lastName}</Text>
             
         </View>
+        
+
     )
 }
 

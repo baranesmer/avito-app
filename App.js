@@ -6,6 +6,7 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import UserBox from './components/UserBox';
 import HomeScreen from './pages/Home';
+import PersonalInfoScreen from './pages/PersonalInfo';
 import Routes from './pages/routes';
 import SignInScreen from './pages/SignIn';
 import SignUpScreen from './pages/SignUp';
@@ -22,6 +23,15 @@ return(
     <Stack.Screen name="Entry" options={{ headerShown: false }} component={Routes} />
     <Stack.Screen name="Test" component={HomeScreen} />
     <Stack.Screen name="Add Customer" component={SignUpScreen} />
+    <Stack.Screen name="Personal Info" component={PersonalInfoScreen} options={{  headerStyle: {
+            backgroundColor: '#A4C8F3',
+            
+          },
+          headerTitleStyle: {
+            color: "#fff"
+          }
+          }} />
+
 
 
   </Stack.Navigator>
