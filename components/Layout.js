@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         flexDirection: "row",
       }}
     >
-      <View style={{ width: "50%", height: "100%" }}>
+      <View style={{ width: "30%", height: "100%" }}>
         <View
           style={{
             display: "flex",
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         </View>
       </View>
 
-      <View style={{ width: "50%", height: "100%", backgroundColor: "#f00" }}>
+      <View style={{ width: "70%", height: "100%", backgroundColor: "#fff" }}>
         {children}
       </View>
     </View>
