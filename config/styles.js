@@ -71,8 +71,23 @@ export const buttonStyle = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  buttonIcon: {
+    padding: 10,
+    paddingHorizontal: 20,
+    borderRadius: 15,
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   text: {
     color: "#fff",
+  },
+  buttonIconText: {
+    fontWeight: "700",
+  },
+  activeText: {
+    color: "#A4C8F3",
   },
 });
 
@@ -182,15 +197,15 @@ export const customerInfoStyles = StyleSheet.create({
   },
   text: {
     alignSelf: "center",
-    color:"#636363",
+    color: "#636363",
     display: "flex",
     paddingVertical: 8,
     fontSize: 10,
     marginBottom: 9,
   },
   headerContainer: {
-    borderColor:"#A4C8F3",
-    borderWidth:1,
+    borderColor: "#A4C8F3",
+    borderWidth: 1,
     display: "flex",
     marginTop: 20,
     width: "100%",
