@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         </View>
       </View>
 
-      <View style={{ width: "70%", height: "100%", backgroundColor: "#fff" }}>
+      <View style={{ width: "70%", height: "100%", backgroundColor: "#FFF" }}>
         {children}
       </View>
     </View>
