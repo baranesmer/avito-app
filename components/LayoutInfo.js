@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import ButtonBar from "./ButtonBar";
 import ButtonIcon from "./ButtonIcon";
-import ButtonSearch from "./ButtonSearch";
-import { SearchIcon } from "./SearchIcon";
+import ButtonIdentity from "./ButtonIdentity";
+import ButtonVertrage from "./ButtonVertrage";
 
-const Layout = ({ children }) => {
+const LayoutInfo = ({ children }) => {
   return (
     <View
       style={{
@@ -15,7 +16,7 @@ const Layout = ({ children }) => {
         flexDirection: "row",
       }}
     >
-      <View style={{ width: "25%", height: "100%" }}>
+      <View style={{ width: "30%", height: "100%" }}>
         <View
           style={{
             display: "flex",
@@ -23,23 +24,24 @@ const Layout = ({ children }) => {
             justifyContent: "center",
           }}
         >
-          <Text style={{ fontSize: 20 ,marginTop:20 }}>Hallo </Text>
-          <Text style={{ fontSize: 20, fontWeight: "700" ,marginTop:20}}>Kevin</Text>
+          <Text style={{ fontSize: 20 }}>Hallo </Text>
+          <Text style={{ fontSize: 20, fontWeight: "700" }}>Kevin</Text>
         </View>
         <View style={{ display: "flex", alignItems: "center", marginTop: 10 }}>
           <Text style={{ fontSize: 15 }}>Selected User </Text>
         </View>
-        <View style={{ display: "flex", alignItems: "center", marginTop: 100 }}>
-          <ButtonSearch>Kunde suchen</ButtonSearch>
-          <ButtonIcon>Kunde anlegen</ButtonIcon>
+        <View style={{ display: "flex", alignItems: "center", marginTop: 10 }}>
+          <ButtonIdentity active>Kundendaten</ButtonIdentity>
+          <ButtonVertrage>Vertrage</ButtonVertrage>
+          <ButtonBar>Beratungsfelder</ButtonBar>
         </View>
       </View>
 
-      <View style={{ width: "75%", height: "100%", backgroundColor: "#FFF" }}>
+      <View style={{ width: "70%", height: "100%", backgroundColor: "#FFF" }}>
         {children}
       </View>
     </View>
   );
 };
 
-export default Layout;
+export default LayoutInfo;

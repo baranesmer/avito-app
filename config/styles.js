@@ -211,7 +211,7 @@ export const customerInfoStyles = StyleSheet.create({
     width: "100%",
     backgroundColor: "#fff",
     padding: 5,
-    borderRadius: 15,
+    borderRadius: 20,
     marginBottom: 10,
   },
   header: {

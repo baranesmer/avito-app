@@ -1,5 +1,6 @@
 import React from "react";
 import { SafeAreaView, Text, TextInput, View } from "react-native";
+import LayoutInfo from "../components/LayoutInfo";
 import { customerInfoStyles } from "../config/styles";
 
 export const PersonalInfoScreen = ({ navigation, route }) => {
@@ -12,12 +13,13 @@ export const PersonalInfoScreen = ({ navigation, route }) => {
         backgroundColor: "#fff",
       }}
     >
+    <LayoutInfo>
       {/* <Text>{route.params.name}</Text>
        */}
       <View style={{ flex: 1 }}>
         <View style={customerInfoStyles.headerContainer}>
           <Text style={customerInfoStyles.header}>
-            PersÃ¶nliche Informationen Kunde
+          Persönliche Informationen
           </Text>
         </View>
         <View
@@ -59,7 +61,7 @@ export const PersonalInfoScreen = ({ navigation, route }) => {
       <View style={{ flex: 1, alignItems: "center" }}>
         <View style={customerInfoStyles.headerContainer}>
           <Text style={customerInfoStyles.header}>
-            PersÃ¶nliche Informationen Partner
+          Persönliche Informationen Partner
           </Text>
         </View>
         <View
@@ -133,6 +135,7 @@ export const PersonalInfoScreen = ({ navigation, route }) => {
           </View>
         </View>
       </View>
+      </LayoutInfo>
     </SafeAreaView>
   );
 };
