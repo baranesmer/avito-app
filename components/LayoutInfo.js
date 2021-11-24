@@ -24,16 +24,17 @@ const LayoutInfo = ({ children }) => {
             justifyContent: "center",
           }}
         >
-          <Text style={{ fontSize: 20 }}>Hallo </Text>
-          <Text style={{ fontSize: 20, fontWeight: "700" }}>Kevin</Text>
+          <Text style={{ fontSize: 20,marginTop:30 }}>Hallo </Text>
+          <Text style={{ fontSize: 20, fontWeight: "700",marginTop:30 }}>Kevin</Text>
         </View>
-        <View style={{ display: "flex", alignItems: "center", marginTop: 10 }}>
-          <Text style={{ fontSize: 15 }}>Selected User </Text>
+        <View style={{ display: "flex", alignItems: "center", marginTop: 30 }}>
+          <Text style={{ fontSize: 15 }}>Max Mustermann & </Text>
+          <Text style={{ fontSize: 15 }}>Marie Mustermann </Text>
         </View>
-        <View style={{ display: "flex", alignItems: "center", marginTop: 10 }}>
-          <ButtonIdentity active>Kundendaten</ButtonIdentity>
-          <ButtonVertrage>Vertrage</ButtonVertrage>
-          <ButtonBar>Beratungsfelder</ButtonBar>
+        <View style={{ display: "flex", alignItems: "flex-start", marginTop: 100, marginLeft: 60}}>
+          <ButtonIdentity active>  Kundendaten</ButtonIdentity>
+          <ButtonVertrage>  Vertrage</ButtonVertrage>
+          <ButtonBar>  Beratungsfelder</ButtonBar>
         </View>
       </View>
 

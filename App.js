@@ -23,14 +23,7 @@ return(
     <Stack.Screen name="Entry" options={{ headerShown: false }} component={Routes} />
     <Stack.Screen name="Test" component={HomeScreen} />
     <Stack.Screen name="Add Customer" component={SignUpScreen} />
-    <Stack.Screen name="Personal Info" component={PersonalInfoScreen} options={{  headerStyle: {
-            backgroundColor: '#A4C8F3',
-            
-          },
-          headerTitleStyle: {
-            color: "#fff"
-          }
-          }} />
+    <Stack.Screen name="Personal Info" component={PersonalInfoScreen} options={{ headerShown: false }} />
 
 
 

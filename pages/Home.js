@@ -25,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
     { name: "Eren", lastName: "Düzel" },
     { name: "İbrahim", lastName: "Atılgan" },
   ];
-  const Tab = createBottomTabNavigator();
+ // const Tab = createBottomTabNavigator();
 
   return (
     <SafeAreaView style={{ backgroundColor: "#fff", height: "100%" }}>
