@@ -4,17 +4,21 @@ import React from "react";
 import HomeScreen from "./Home";
 import SignUpScreen from "./SignUp";
 import NewPageScreen from "./Test";
-const Routes = ({navigation}) => {
+const Routes = ({ navigation }) => {
   const Tab = createBottomTabNavigator();
 
   return (
-      <Tab.Navigator options={{ headerShown: false }}>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="NewPage" component={NewPageScreen} />
-        {/* <Tab.Screen name="SignUp" component={SignUpScreen} /> */}
-      </Tab.Navigator>
+    <Tab.Navigator
+      options={{ headerShown: false }}
+      screenOptions={{
+        tabBarStyle: { display: "none" },
+      }}
+    >
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="NewPage" component={NewPageScreen} />
+      {/* <Tab.Screen name="SignUp" component={SignUpScreen} /> */}
+    </Tab.Navigator>
   );
 };
-
 
 export default Routes;
