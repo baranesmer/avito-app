@@ -7,17 +7,25 @@ const AddCustomer = ()=>{
   return(
     <View style={{width: "80%"}}>
       
-        <TextInput style={addCustomerStyles.input} placeholder="Firstname"/>
+        <TextInput style={addCustomerStyles.input} placeholder="Vorname"/>
         
-        <TextInput style={addCustomerStyles.input} placeholder="lastname"/>
+        <TextInput style={addCustomerStyles.input} placeholder="Nachname"/>
 
-        <TextInput style={addCustomerStyles.input} placeholder="Phone Number"/>
+        <TextInput style={addCustomerStyles.input} placeholder="Telefonnummer"/>
 
         <TextInput style={addCustomerStyles.input} placeholder="E-Mail"/>
 
-        <TextInput style={addCustomerStyles.input} placeholder="Relationship"/>
+        <TextInput style={addCustomerStyles.input} placeholder="Familienstand"/>
 
         <TextInput style={addCustomerStyles.input} placeholder="Mitarbeiternummer"/>
+        {/* Mutlaka sil  */}
+        <TextInput editable={false} selectTextOnFocus={false} style={{opacity: 0}}  placeholder="Mitarbeiternummer"/>
+        {/* Mutlaka sil  */}
+
+        <TextInput style={addCustomerStyles.input} placeholder="Vorname Partner"/>
+
+        <TextInput style={addCustomerStyles.input} placeholder="Nachname Partner"/>
+
 <View style= {{marginTop:20}}>
 <Button>
         Add

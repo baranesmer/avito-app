@@ -14,7 +14,7 @@ const Routes = ({ navigation }) => {
         tabBarStyle: { display: "none" },
       }}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Home" component={HomeScreen}  />
       <Tab.Screen name="NewPage" component={NewPageScreen} />
       {/* <Tab.Screen name="SignUp" component={SignUpScreen} /> */}
     </Tab.Navigator>

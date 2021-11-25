@@ -5,7 +5,7 @@ import ButtonIcon from "./ButtonIcon";
 import ButtonSearch from "./ButtonSearch";
 import { SearchIcon } from "./SearchIcon";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, selected, navigation }) => {
   return (
     <View
       style={{
@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
         height: "100%",
         display: "flex",
         flexDirection: "row",
+        backgroundColor:"#fff"
       }}
     >
       <View style={{ width: "25%", height: "100%" }}>
@@ -29,13 +30,13 @@ const Layout = ({ children }) => {
         <View style={{ display: "flex", alignItems: "center", marginTop: 10 }}>
           <Text style={{ fontSize: 15 }}>Selected User </Text>
         </View>
-        <View style={{ display: "flex", alignItems: "center", marginTop: 100 }}>
-          <ButtonSearch>Kunde suchen</ButtonSearch>
-          <ButtonIcon>Kunde anlegen</ButtonIcon>
+        <View style={{ display: "flex", alignItems: "center", marginTop: 100,marginLeft: "auto",marginRight: "auto" }}>
+          <ButtonSearch active={selected==="Home"? true: false} onPress={()=> navigation.navigate("Test")}>Kunde suchen</ButtonSearch>
+          <ButtonIcon active={selected==="AddCustomer"} onPress={()=> navigation.navigate("Add Customer")}>Kunde anlegen</ButtonIcon>
         </View>
       </View>
 
-      <View style={{ width: "75%", height: "100%", backgroundColor: "#FFF" }}>
+      <View style={{ width: "75%", height: "100%", backgroundColor: "#f9f9f9", padding:10 }}>
         {children}
       </View>
     </View>

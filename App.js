@@ -21,8 +21,8 @@ return(
   <Stack.Navigator >
     <Stack.Screen name="Home" options={{ headerShown: false }} component={SignInScreen} />
     <Stack.Screen name="Entry" options={{ headerShown: false }} component={Routes} />
-    <Stack.Screen name="Test" component={HomeScreen} />
-    <Stack.Screen name="Add Customer" component={SignUpScreen} />
+    <Stack.Screen name="Test" component={HomeScreen} options={{ headerShown: false }} />
+    <Stack.Screen name="Add Customer" component={SignUpScreen} options={{ headerShown: false }} />
     <Stack.Screen name="Personal Info" component={PersonalInfoScreen} options={{ headerShown: false }} />
 
 

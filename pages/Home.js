@@ -28,8 +28,8 @@ const HomeScreen = ({ navigation }) => {
  // const Tab = createBottomTabNavigator();
 
   return (
-    <SafeAreaView style={{ backgroundColor: "#fff", height: "100%" }}>
-      <Layout>
+    <SafeAreaView style={{ backgroundColor: "#F9F9F9", height: "100%" }}>
+      <Layout selected="Home" navigation={navigation}>
         <CustomerSearch onPress={() => navigation.push("Add Customer")} />
         <View style={styles.container}>
           {nameList.map(({ name, lastName }) => (
@@ -52,7 +52,7 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f9f9f9",
     flexDirection: "row",
     flexWrap: "wrap",
   },

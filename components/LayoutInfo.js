@@ -6,7 +6,7 @@ import ButtonIcon from "./ButtonIcon";
 import ButtonIdentity from "./ButtonIdentity";
 import ButtonVertrage from "./ButtonVertrage";
 
-const LayoutInfo = ({ children }) => {
+const LayoutInfo = ({ children, selected, navigation }) => {
   return (
     <View
       style={{
@@ -14,9 +14,10 @@ const LayoutInfo = ({ children }) => {
         height: "100%",
         display: "flex",
         flexDirection: "row",
+        backgroundColor: "#fff"
       }}
     >
-      <View style={{ width: "30%", height: "100%" }}>
+      <View style={{ width: "25%", height: "100%" }}>
         <View
           style={{
             display: "flex",
@@ -31,14 +32,14 @@ const LayoutInfo = ({ children }) => {
           <Text style={{ fontSize: 15 }}>Max Mustermann & </Text>
           <Text style={{ fontSize: 15 }}>Marie Mustermann </Text>
         </View>
-        <View style={{ display: "flex", alignItems: "flex-start", marginTop: 100, marginLeft: 60}}>
-          <ButtonIdentity active>  Kundendaten</ButtonIdentity>
-          <ButtonVertrage>  Vertrage</ButtonVertrage>
+        <View style={{ display: "flex", alignItems: "flex-start", marginTop: 100, marginLeft: "auto",marginRight: "auto"}}>
+          <ButtonIdentity active={selected=="PersonalInfo"? true: false}>  Kundendaten</ButtonIdentity>
+          <ButtonVertrage onPress={()=>navigation.navigate("NewPage")}>  Vertrage</ButtonVertrage>
           <ButtonBar>  Beratungsfelder</ButtonBar>
         </View>
       </View>
 
-      <View style={{ width: "70%", height: "100%", backgroundColor: "#FFF" }}>
+      <View style={{ width: "75%", height: "100%", backgroundColor: "#F9F9F9",padding: 10 }}>
         {children}
       </View>
     </View>
