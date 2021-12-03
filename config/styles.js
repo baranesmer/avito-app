@@ -1,6 +1,42 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 
+export const vertragsBoxStyles = StyleSheet.create({
+  
+  container:{ 
+  borderStyle: "solid",
+  borderWidth: 1,
+  borderColor: "#A4C8F3",
+  padding: 20,
+  borderRadius: 20,
+  margin: 5,
+  display: "flex",
+ // justifyContent: "flex-start",
+ // alignItems: "center",
+  width: 223,
+  flexGrow: 1,
+  height: 223,
+  marginLeft:20,
+  marginBottom:20
+},
+  header:{
+  color:'#000000',
+  alignItems:"center",
+  fontWeight:"500",
+  fontSize:13,
+  justifyContent:"center"
+
+},
+text:{
+color:'#000000',
+fontWeight:"300",
+fontSize:10,
+alignItems:"flex-start",
+marginTop:10
+
+},
+});
+
 export const userBoxStyles = StyleSheet.create({
   container: {
     // backgroundColor:"#A4C8F3",
@@ -71,6 +107,20 @@ export const buttonStyle = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  buttonAdd: {
+    
+    borderColor: "#A4C8F3",
+    backgroundColor: '#fff',
+    borderWidth:1,
+    padding: 10,
+    paddingHorizontal: 20,
+    borderRadius: 15,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+
+  },
+
   buttonIcon: {
     padding: 10,
     paddingHorizontal: 20,
@@ -82,6 +132,9 @@ export const buttonStyle = StyleSheet.create({
   },
   text: {
     color: "#fff",
+  },
+  textAdd: {
+    color: "#A4C8F3",
   },
   buttonIconText: {
     fontWeight: "700",
@@ -192,6 +245,20 @@ export const customerInfoStyles = StyleSheet.create({
     borderColor: "#A4C8F3",
     display: "flex",
     width: "60%",
+    // backgroundColor: "#fff",
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    borderRadius: 15,
+    fontSize: 10,
+    marginBottom: 7,
+  },
+  inputMini: {
+    alignSelf: "center",
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: "#A4C8F3",
+    display: "flex",
+    width: "40%",
     // backgroundColor: "#fff",
     paddingHorizontal: 10,
     paddingVertical: 8,

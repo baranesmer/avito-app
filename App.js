@@ -11,6 +11,7 @@ import Routes from './pages/routes';
 import SignInScreen from './pages/SignIn';
 import SignUpScreen from './pages/SignUp';
 import NewPageScreen from './pages/Test';
+import VertrasubersichtScreen from './pages/Vertragsübersicht';
 
 
 
@@ -24,7 +25,6 @@ return(
     <Stack.Screen name="Test" component={HomeScreen} options={{ headerShown: false }} />
     <Stack.Screen name="Add Customer" component={SignUpScreen} options={{ headerShown: false }} />
     <Stack.Screen name="Personal Info" component={PersonalInfoScreen} options={{ headerShown: false }} />
-
 
 
   </Stack.Navigator>

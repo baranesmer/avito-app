@@ -1,7 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
-import { addCustomerStyles } from "../config/styles";
+import { addCustomerStyles, buttonStyle } from "../config/styles";
 import Button from "./Button";
+import ButtonAdd from "./ButtonAdd";
 
 const AddCustomer = ()=>{
   return(
@@ -29,7 +30,7 @@ const AddCustomer = ()=>{
 <View style= {{marginTop:20}}>
 <Button>
         Add
-        </Button>
+</Button>
 </View>
     
     </View>

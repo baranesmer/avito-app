@@ -32,10 +32,11 @@ const LayoutInfo = ({ children, selected, navigation }) => {
           <Text style={{ fontSize: 15 }}>Max Mustermann & </Text>
           <Text style={{ fontSize: 15 }}>Marie Mustermann </Text>
         </View>
-        <View style={{ display: "flex", alignItems: "flex-start", marginTop: 100, marginLeft: "auto",marginRight: "auto"}}>
-          <ButtonIdentity active={selected=="PersonalInfo"? true: false}>  Kundendaten</ButtonIdentity>
-          <ButtonVertrage onPress={()=>navigation.navigate("NewPage")}>  Vertrage</ButtonVertrage>
-          <ButtonBar>  Beratungsfelder</ButtonBar>
+        <View style={{ display: "flex", alignItems: "flex-start", marginTop: 150, marginLeft: "auto",marginRight: "auto"}}>
+          <ButtonIdentity active={selected=="PersonalInfo"? true: false} onPress={()=>navigation.navigate("Personal Info")}>  Kundendaten</ButtonIdentity>
+          <ButtonVertrage  active={selected=="Vertragsübersicht"? true: false} onPress={()=>navigation.navigate("Vertragsübersicht")}>  Vertragsübersicht</ButtonVertrage>
+          <ButtonVertrage onPress={()=>navigation.navigate("NewPage")}>  Vertragseingabe</ButtonVertrage>
+          <ButtonBar active={selected=="Beratungsfelder"? true: false} onPress={()=>navigation.navigate("Beratungsfelder")}>  Beratungsfelder</ButtonBar>
         </View>
       </View>
 
